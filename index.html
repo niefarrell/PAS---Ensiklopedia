@@ -3,16 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Ensiklopedia</title>
+    <title>Homepage</title>
 </head>
 <body>
-    <h1 class="text-center mt-40 mb-10 text-4xl"><b>SELAMAT DATANG DI ENSIKLOPEDIA</b></h1>
-    <div class="text-center">
-        <a href="#" class="mr-5">Home</a>
-        <a href="about.html" class="mr-5">About</a>
-        <a href="topik1/index.html" class="mr-5">Topik 1</a>
-        <a href="">Topik 2</a>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <h4>NFN</h4>
+        </div>
+    
+        <div class="navbar-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="blog.html">Technology</a></li>
+            <li><a href="blog.html">Food</a></li>
+          </ul>
+        </div>
+    
+        <div class="menu-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+    
+   
+    
+
+    <div class="w-screen h-screen flex justify-center items-center text-6xl">
+      <div>
+        <h1 data-aos="zoom-in" data-aos-duration='2000' class="text-6xl font-bold text-center my-10">Selamat Datang di <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent" >Ensiklopeida</span></h1>
+      </div>
     </div>
+
+    <h1 class="flex justify-center text-5xl mb-9">About Me</h1>
+    <section id="#" class="bg-slate-700 -mt-1 p-2 flex font-ArchitectsDaughter">
+      <div data-aos="fade-up-right" data-aos-duration="1000">
+        <h1 class="text-white text-5xl ml-44 mt-20 animate-pulse">Nie Farrell <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">Nathaniel 10-3 21</span></h1>
+        <h3 class="text-slate-200 ml-44 mt-3">Santay Dlu Ga Sih</h3>
+        <h3 class="text-slate-200 ml-44 ">Moto Hidup: Motivasi Tanpa Aksi Hanyalah Fiksi</h3>
+        <div class="playpause-track ml-40" onclick="playpauseTrack()">
+          <i class="fa fa-play-circle fa-5x"></i>
+        </div>
+        
+      </div>
+      
+      <img src="img/profil.jpeg" alt="" class="rounded-md h-96 w-80 profil mr-60" data-aos="flip-right" data-aos-duration="3000">
+      
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="script.js"></script>
 </body>
 </html>
